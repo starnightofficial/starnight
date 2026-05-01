@@ -1,0 +1,50 @@
+import '../styles/About.css';
+
+export default function About() {
+  return (
+    <div className="about-page">
+      <div className="about-header" style={{
+        background: `linear-gradient(rgba(27,35,64,0.75), rgba(27,35,64,0.75)), url('/background.png') center/cover`,
+        padding: '100px 80px 60px',
+        textAlign: 'center',
+      }}>
+        <h1 style={{ color: 'white', fontSize: 36, fontWeight: 400, letterSpacing: '0.1em' }}>About</h1>
+        <div style={{ color: 'rgba(212,192,122,0.7)', fontSize: 14, marginTop: 8, letterSpacing: '0.3em' }}>
+          ✦ · · · · · · · · ·
+        </div>
+      </div>
+
+      <div className="about-body">
+        <div className="about-body__content">
+
+          <div className="about-block">
+            <h2>私たちの考え</h2>
+            <p>
+              大学における学びは知識の習得にとどまらず、自らの関心や問を深め、社会や未来と結びついていく営みであると私たちは考えています。
+            </p>
+            <p>
+              スターナイト講義は、世界的研究者を招き、講演に加えて、対話や交流の機会を設けることで、知の最前線に触れる場を提供します。
+            </p>
+            <p>
+              双方向のコミュニケーションを通して、学びの意味をとらえなおす契機となることを目指しています。
+            </p>
+          </div>
+
+          <div className="about-block">
+            <h2>目指す姿</h2>
+            <p>
+              本講義を通して、学生が世界的研究者の旅行や価値観に直接触れ、自らの学びと社会や未来とのつながりを実感できる状態を目指します。
+            </p>
+            <p>
+              また、対話を通じて得られる気づきや問を起点に、学習意欲が高まり、主体的に行動する姿勢がはぐくまれることを期待しています。
+            </p>
+            <p>
+              ここでの出会いや経験が、それぞれの関心を深め、今後の学びや進路選択における指針となり、次の一方を踏み出す原動力となることを願っています。
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  );
+}
