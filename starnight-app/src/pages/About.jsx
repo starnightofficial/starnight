@@ -1,16 +1,16 @@
 import '../styles/About.css';
+import '../styles/Speakers.css';
 
 export default function About() {
   return (
     <div className="about-page">
-      <div className="about-header" style={{
-        background: `linear-gradient(rgba(27,35,64,0.75), rgba(27,35,64,0.75)), url('/background.png') center/cover`,
-        padding: '100px 80px 60px',
-        textAlign: 'center',
-      }}>
-        <h1 style={{ color: 'white', fontSize: 36, fontWeight: 400, letterSpacing: '0.1em' }}>About</h1>
-        <div style={{ color: 'rgba(212,192,122,0.7)', fontSize: 14, marginTop: 8, letterSpacing: '0.3em' }}>
-          ✦ · · · · · · · · ·
+
+      <div className="speakers-header">
+        <div className="speakers-title">
+          <h1>
+            About
+            <span className="deco">✦ · · · · · · · ·</span>
+          </h1>
         </div>
       </div>
 

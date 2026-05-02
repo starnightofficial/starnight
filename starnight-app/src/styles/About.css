@@ -65,7 +65,7 @@
 
 .about-block h2 {
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--navy);
   text-align: center;
   margin-bottom: 28px;
@@ -73,7 +73,7 @@
 }
 
 .about-block p {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--text-muted);
   line-height: 2;
   margin-bottom: 16px;

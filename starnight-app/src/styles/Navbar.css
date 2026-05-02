@@ -13,19 +13,21 @@
 }
 
 .navbar__logo img {
-  height: 40px;
-  width: auto;
+  width: 120px;
+  height: auto;
 }
 
 .navbar__links {
   display: flex;
   gap: 36px;
   list-style: none;
+  padding: 0;
+
 }
 
 .navbar__links a {
   color: var(--white);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   letter-spacing: 0.05em;
   transition: color 0.2s;

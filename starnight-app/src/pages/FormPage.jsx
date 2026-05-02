@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import '../styles/Form.css';
+import '../styles/Speakers.css';
 
 export default function FormPage() {
   const [form, setForm] = useState({ name: '', email: '', dept: '', speaker: '', message: '' });
@@ -14,9 +15,13 @@ export default function FormPage() {
 
   return (
     <div className="form-page">
-      <div className="form-page-header">
-        <div className="form-page-title">
-          <h1>Open Letter Maker</h1>
+
+      <div className="speakers-header">
+        <div className="speakers-title">
+          <h1>
+            Form
+            <span className="deco">✦ · · · · · · · ·</span>
+          </h1>
         </div>
       </div>
 

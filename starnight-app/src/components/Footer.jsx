@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__top">
         <div className="footer__brand">
-          <img src="/logo.png" alt="スターナイト講義" />
+          <img src="logo.png" alt="スターナイト講義" />
           <p className="footer__brand-name">スターナイト講義</p>
           <p className="footer__brand-tagline">京都大学の輝く星と出会う夜ー</p>
         </div>

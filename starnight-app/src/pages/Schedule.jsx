@@ -1,4 +1,5 @@
 import '../styles/Schedule.css';
+import '../styles/Speakers.css';
 
 const schedule = [
   { no: 1, date: '2026年4月10日（金）', time: '18:30〜20:00', venue: '総合人間学部棟 1102教室', speaker: '宮野 公樹先生', theme: '知とは何か' },
@@ -12,9 +13,13 @@ const schedule = [
 export default function Schedule() {
   return (
     <div className="schedule-page">
-      <div className="schedule-header">
-        <div className="schedule-title">
-          <h1>Schedule</h1>
+
+      <div className="speakers-header">
+        <div className="speakers-title">
+          <h1>
+            Schedule
+            <span className="deco">✦ · · · · · · · ·</span>
+          </h1>
         </div>
       </div>
 

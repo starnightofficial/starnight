@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <Link to="/" className="navbar__logo">
-        <img src="/logo.png" alt="スターナイト講義" />
+        <img src="logo.png" alt="スターナイト講義" />
       </Link>
       <ul className="navbar__links">
         {links.map(({ to, label }) => (
