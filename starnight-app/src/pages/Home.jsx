@@ -30,7 +30,7 @@ export default function Home() {
           <img src="/pic1.png" alt="about" className="about-preview__img" />
           <div>
             <p className="about-preview__label">
-              About. <span style={{ fontSize: 13, opacity: 0.5, letterSpacing: '0.2em' }}>✦ · · · · ·</span>
+              About. <span style={{ fontSize: 13, opacity: 0.5, letterSpacing: '0.2em' }}>✦ · · · · · ·</span>
             </p>
             <p className="about-preview__text">
               スターナイト講義は、世界的研究者を招き、講演に加えて、対話や交流の機会を設けることで、知の最前線に触れる場を提供します。大学における学びが社会や未来へとつながるきっかけを生み出します。
