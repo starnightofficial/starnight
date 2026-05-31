@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import '../styles/Home.css';
 
 const scheduleData = [
-  { date: '2026年10月8日（木）', speaker: '宮野 公樹先生', theme: '知とは何か' },
+  { date: '2026年10月8日（木）', speaker: 'TBA', theme: '' },
   { date: '2026年10月16日（金）', speaker: 'TBA', theme: '' },
   { date: '2026年10月22日（金）', speaker: 'TBA', theme: '' },
   { date: '2026年10月29日（木）', speaker: 'TBA', theme: '' },
@@ -82,16 +82,16 @@ export default function Home() {
               {scheduleData.map((row, i) => (
                 <tr key={i}>
                   <td className="schedule-date">{row.date}</td>
-                  {i === 1 ? (
+                  {i === 0 ? (
                     <>
-                      <td rowSpan={5} className="schedule-tba-cell">
+                      <td rowSpan={6} className="schedule-tba-cell">
                         TBA
                       </td>
-                      <td rowSpan={5} className="schedule-tba-cell">
+                      <td rowSpan={6} className="schedule-tba-cell">
                         TBA
                       </td>
                     </>
-                  ) : i > 1 ? null : (
+                  ) : i > 0 ? null : (
                     <>
                       <td>{row.speaker}</td>
                       <td>{row.theme}</td>

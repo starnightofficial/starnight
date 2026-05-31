@@ -11,7 +11,7 @@ import '../styles/Speakers.css';
 // ];
 
 const schedule = [
-  { no: 1, date: '2026年10月8日（木）', speaker: '宮野 公樹先生', theme: '知とは何か' },
+  { no: 1, date: '2026年10月8日（木）', speaker: 'TBA', theme: '' },
   { no: 2, date: '2026年10月16日（金）', speaker: 'TBA', theme: '' },
   { no: 3, date: '2026年10月22日（金）', speaker: 'TBA', theme: '' },
   { no: 4, date: '2026年10月29日（木）', speaker: 'TBA', theme: '' },
