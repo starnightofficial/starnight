@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import '../styles/Navbar.css';
 
 const links = [
@@ -10,15 +11,39 @@ const links = [
 ];
 
 export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [location.pathname]);
+
   return (
     <nav className="navbar">
       <Link to="/" className="navbar__logo">
         <img src="logo.png" alt="スターナイト講義" />
       </Link>
-      <ul className="navbar__links">
+      <button
+        type="button"
+        className="navbar__toggle"
+        aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+        aria-expanded={isMenuOpen}
+        aria-controls="primary-navigation"
+        onClick={() => setIsMenuOpen((open) => !open)}
+      >
+        <span />
+        <span />
+        <span />
+      </button>
+      <ul
+        id="primary-navigation"
+        className={`navbar__links ${isMenuOpen ? 'navbar__links--open' : ''}`}
+      >
         {links.map(({ to, label }) => (
           <li key={to}>
-            <Link to={to}>{label}</Link>
+            <Link to={to} onClick={() => setIsMenuOpen(false)}>
+              {label}
+            </Link>
           </li>
         ))}
       </ul>

@@ -1,12 +1,4 @@
-import { useState } from 'react';
-
 export default function Contact() {
-  const [form, setForm] = useState({ name: '', email: '', message: '' });
-  const [sent, setSent] = useState(false);
-
-  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
-  const handleSubmit = (e) => { e.preventDefault(); setSent(true); };
-
   return (
     <div style={{ paddingTop: 80, minHeight: '100vh', background: 'var(--cream)' }}>
       <div style={{
@@ -18,66 +10,25 @@ export default function Contact() {
       </div>
 
       <div style={{ maxWidth: 680, margin: '0 auto', padding: '64px 24px' }}>
-        {sent ? (
-          <div style={{ textAlign: 'center', padding: '40px 0' }}>
-            <p style={{ fontSize: 18, color: 'var(--navy)', fontWeight: 500 }}>送信しました！</p>
-            <p style={{ fontSize: 13, color: 'var(--text-muted)', marginTop: 8 }}>お問い合わせありがとうございます。</p>
-          </div>
-        ) : (
-          <>
-            <h2 style={{ fontSize: 22, fontWeight: 500, color: 'var(--navy)', marginBottom: 24 }}>お問い合わせ</h2>
-            <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
-              {[
-                { name: 'name', label: '氏名', type: 'text', placeholder: '山田 太郎' },
-                { name: 'email', label: 'メールアドレス', type: 'email', placeholder: 'example@kyoto-u.ac.jp' },
-              ].map(({ name, label, type, placeholder }) => (
-                <div key={name}>
-                  <label style={{ display: 'block', fontSize: 12, fontWeight: 500, color: 'var(--navy)', marginBottom: 6 }}>{label}</label>
-                  <input
-                    type={type}
-                    name={name}
-                    value={form[name]}
-                    onChange={handleChange}
-                    placeholder={placeholder}
-                    style={{
-                      width: '100%', padding: '12px 14px',
-                      border: '1px solid rgba(27,35,64,0.25)', borderRadius: 4,
-                      fontSize: 13, fontFamily: 'inherit', background: 'white',
-                    }}
-                  />
-                </div>
-              ))}
-              <div>
-                <label style={{ display: 'block', fontSize: 12, fontWeight: 500, color: 'var(--navy)', marginBottom: 6 }}>問い合わせ内容</label>
-                <textarea
-                  name="message"
-                  value={form.message}
-                  onChange={handleChange}
-                  rows={5}
-                  placeholder="お問い合わせ内容をご記入ください"
-                  style={{
-                    width: '100%', padding: '12px 14px',
-                    border: '1px solid rgba(27,35,64,0.25)', borderRadius: 4,
-                    fontSize: 13, fontFamily: 'inherit', background: 'white',
-                    resize: 'vertical',
-                  }}
-                />
-              </div>
-              <button
-                type="submit"
-                style={{
-                  alignSelf: 'flex-start',
-                  background: 'var(--navy)', color: 'white',
-                  border: 'none', padding: '14px 40px',
-                  fontSize: 14, fontFamily: 'inherit', borderRadius: 4,
-                  cursor: 'pointer', letterSpacing: '0.05em',
-                }}
-              >
-                送信する
-              </button>
-            </form>
-          </>
-        )}
+        <h2 style={{ fontSize: 22, fontWeight: 500, color: 'var(--navy)', marginBottom: 24 }}>お問い合わせ</h2>
+        <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
+          <a href="mailto:tedxkyotouniversity.team@gmail.com" aria-label="Email" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: 'var(--text-dark)', textDecoration: 'none' }}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 5.5A2.5 2.5 0 0 1 5.5 3h13A2.5 2.5 0 0 1 21 5.5v13A2.5 2.5 0 0 1 18.5 21h-13A2.5 2.5 0 0 1 3 18.5v-13z" stroke="currentColor" strokeWidth="1.2" strokeLinejoin="round"/>
+              <path d="M21 6.5l-9 6-9-6" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            <span>tedxkyotouniversity.team@gmail.com</span>
+          </a>
+
+          <a href="https://www.instagram.com/tedxkyotouniversity/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: 'var(--text-dark)', textDecoration: 'none' }}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" strokeWidth="1.2"/>
+              <path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+              <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" />
+            </svg>
+            <span>tedxkyotouniversity</span>
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -55,6 +55,22 @@
   line-height: 1.8;
 }
 
+.google-form-embed {
+  width: 100%;
+  min-height: 1200px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: 0 2px 24px rgba(0,0,0,0.08);
+}
+
+.google-form-embed iframe {
+  display: block;
+  width: 100%;
+  min-height: 1200px;
+  border: 0;
+}
+
 .form-full {
   display: flex;
   flex-direction: column;
@@ -121,4 +137,8 @@
 @media (max-width: 768px) {
   .form-page-header { padding: 60px 24px 0; }
   .form-page-body { padding: 40px 16px; }
+  .google-form-embed,
+  .google-form-embed iframe {
+    min-height: 1400px;
+  }
 }

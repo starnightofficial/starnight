@@ -12,6 +12,40 @@
   backdrop-filter: blur(8px);
 }
 
+.navbar__toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  padding: 0;
+}
+
+.navbar__toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--white);
+  position: absolute;
+}
+
+.navbar__toggle span:nth-child(1) {
+  transform: translateY(-6px);
+}
+
+.navbar__toggle span:nth-child(2) {
+  transform: translateY(0);
+}
+
+.navbar__toggle span:nth-child(3) {
+  transform: translateY(6px);
+}
+
 .navbar__logo img {
   width: 120px;
   height: auto;
@@ -56,12 +90,41 @@
 
 @media (max-width: 768px) {
   .navbar {
-    padding: 14px 24px;
+    padding: 14px 20px;
+    position: fixed;
   }
+
+  .navbar__toggle {
+    display: inline-flex;
+    position: relative;
+    z-index: 101;
+  }
+
   .navbar__links {
-    gap: 18px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    padding: 16px 20px 22px;
+    background: rgba(27, 35, 64, 0.96);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
   }
+
+  .navbar__links--open {
+    display: flex;
+  }
+
+  .navbar__links li + li {
+    margin-top: 14px;
+  }
+
   .navbar__links a {
-    font-size: 12px;
+    font-size: 14px;
+    display: inline-block;
   }
 }
