@@ -13,7 +13,7 @@ import '../styles/Speakers.css';
 const schedule = [
   { no: 1, date: '2026年10月8日（木）', speaker: 'TBA', theme: '' },
   { no: 2, date: '2026年10月16日（金）', speaker: 'TBA', theme: '' },
-  { no: 3, date: '2026年10月22日（金）', speaker: 'TBA', theme: '' },
+  { no: 3, date: '2026年10月22日（木）', speaker: 'TBA', theme: '' },
   { no: 4, date: '2026年10月29日（木）', speaker: 'TBA', theme: '' },
   { no: 5, date: '2026年11月5日（木）', speaker: 'TBA', theme: '' },
   { no: 6, date: '2026年11月12日（木）', speaker: 'TBA', theme: '' },
@@ -33,6 +33,7 @@ export default function Schedule() {
       </div>
 
       <div className="schedule-body">
+        <p>※ 各日登壇講師は当日に発表されます</p>
         <table>
           <thead>
             <tr>
@@ -49,7 +50,7 @@ export default function Schedule() {
               <tr key={row.no}>
                 <td>{row.no}</td>
                 <td className="schedule-date">
-                  {row.date}<br />18:30〜20:00<br />国際高等教育院棟3階大教室31・32
+                  {row.date}<br />16:45〜18:15<br />国際高等教育院棟3階大教室31・32
                   </td>
                 <td>{row.speaker}</td>
                 <td>{row.theme}</td>
