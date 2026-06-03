@@ -25,9 +25,9 @@ export default function Footer() {
       </div>
       <div className="footer__bottom">
         <span className="footer__copy">
-          2026 Institute of Liberal Arts and Sciences, Kyoto University
+          2026 スターナイト講義実行委員会.
         </span>
-        <span className="footer__find">Find: @ starnight</span>
+        <span className="footer__find">Find: @starnight</span>
       </div>
     </footer>
   );
