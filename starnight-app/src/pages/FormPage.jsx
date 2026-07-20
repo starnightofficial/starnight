@@ -19,8 +19,8 @@ export default function FormPage() {
 
       <div className="form-page-body">
         <h2>参加申し込み</h2>
-        <p>※ 座席は先着順です</p>
-        <p>※ フォームを提出しなくても参加できるが、座席の確保は保証できません</p>
+        <p>※ 座席は先着順です。</p>
+        <p>※ フォーム未提出でもご参加可能ですが、座席の確保は保証できませんのでご了承ください。</p>
         <p className="form-desc">
           下のフォームから参加申し込みを送信できます。<br />
           Google Forms で回答が直接送信されます。

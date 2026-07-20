@@ -7,7 +7,7 @@ const scheduleData = [
   { date: '2026年10月22日（木）', speaker: 'TBA', theme: '' },
   { date: '2026年10月29日（木）', speaker: 'TBA', theme: '' },
   { date: '2026年11月5日（木）', speaker: 'TBA', theme: '' },
-  { date: '2026年11月12日（木）', speaker: 'TBA', theme: '' },
+  { date: '2026年11月10日（火）', speaker: 'TBA', theme: '' },
 ];
 
 export default function Home() {
@@ -38,9 +38,9 @@ export default function Home() {
               About. <span style={{ fontSize: 13, opacity: 0.5, letterSpacing: '0.2em' }}>✦ · · · · · ·</span>
             </p>
             <p className="about-preview__text">
-              スターナイト講義は、世界的研究者を招き、講演に加えて、対話や交流の機会を設けることで、知の最前線に触れるスターナイト講義は、世界的研究者を招き、講演者が受講者からの質問を反映させながら講義を進めていくスタイルで、知の最前線に触れる場を提供します。 
-              <br /> <br />
-              双方向のコミュニケーションを通して、学びの意味をとらえなおす契機となることを目指しています。場を提供します。大学における学びが社会や未来へとつながるきっかけを生み出します。
+              「スターナイト講義」では、世界的研究者による講演に加え、対談や交流の機会を用意しています。研究の最前線に触れるとともに、双方向の対話を通した学びの深まりや、新たな視点・問いの獲得を目指します。
+              {/* <br /> <br />
+              双方向のコミュニケーションを通して、学びの意味をとらえなおす契機となることを目指しています。場を提供します。大学における学びが社会や未来へとつながるきっかけを生み出します。 */}
             </p>
             <Link to="/about" className="learn-more">→ Learn more</Link>
             <p className="about-preview__sponsor">主催: TEDxKyotoUniversity、スターナイト講義実行委員会 | 共催：京都大学国際高等教育院</p>

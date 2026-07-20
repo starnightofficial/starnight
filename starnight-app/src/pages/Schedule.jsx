@@ -16,7 +16,7 @@ const schedule = [
   { no: 3, date: '2026年10月22日（木）', speaker: 'TBA', theme: '' },
   { no: 4, date: '2026年10月29日（木）', speaker: 'TBA', theme: '' },
   { no: 5, date: '2026年11月5日（木）', speaker: 'TBA', theme: '' },
-  { no: 6, date: '2026年11月12日（木）', speaker: 'TBA', theme: '' },
+  { no: 6, date: '2026年11月10日（火）', speaker: 'TBA', theme: '' },
 ];
 
 export default function Schedule() {
