@@ -11,11 +11,12 @@ const scheduleData = [
 ];
 
 const speakerPreviewData = [
-  { name: '高橋 淳先生', image: 'public/speakers/takahashi.jpg' },
-  { name: '野田 進先生', image: 'public/speakers/noda.jpg' },
-  { name: '内田 由紀子先生', image: 'public/speakers/uchida.jpg' },
-  { name: '森 重文先生', image: 'public/speakers/mori.jpg' },
-  { name: '北川 進先生', image: 'public/speakers/kitagawa.jpg' },
+  { name: '宮野 公樹先生', image: '' },
+  { name: '高橋 淳先生', image: 'speakers/takahashi.jpg' },
+  { name: '野田 進先生', image: 'speakers/noda.jpg' },
+  { name: '内田 由紀子先生', image: 'speakers/uchida.jpg' },
+  { name: '森 重文先生', image: 'speakers/mori.jpg' },
+  { name: '北川 進先生', image: 'speakers/kitagawa.jpg' },  
 ];
 
 export default function Home() {
