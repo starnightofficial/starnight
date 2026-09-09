@@ -53,7 +53,7 @@
   background-color: var(--navy);
   color: var(--white);
   padding: 14px 20px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   text-align: left;
   letter-spacing: 0.05em;
@@ -62,7 +62,7 @@
 .schedule-body td {
   border: 1px solid rgba(27,35,64,0.15);
   padding: 14px 20px;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--text-dark);
   vertical-align: top;
 }
@@ -128,7 +128,7 @@
   .schedule-header { padding: 60px 24px 0; }
   .schedule-body { padding: 40px 16px; }
   .schedule-body td,
-  .schedule-body th { padding: 10px 12px; font-size: 12px; }
+  .schedule-body th { padding: 10px 12px; font-size: 18px; }
 
   .program-flow {
     margin-top: 32px;

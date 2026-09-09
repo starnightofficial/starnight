@@ -10,6 +10,14 @@ const scheduleData = [
   { date: '2026年11月10日（火）', speaker: 'TBA', theme: '' },
 ];
 
+const speakerPreviewData = [
+  { name: '高橋 淳先生', image: 'public/speakers/takahashi.jpg' },
+  { name: '野田 進先生', image: 'public/speakers/noda.jpg' },
+  { name: '内田 由紀子先生', image: 'public/speakers/uchida.jpg' },
+  { name: '森 重文先生', image: 'public/speakers/mori.jpg' },
+  { name: '北川 進先生', image: 'public/speakers/kitagawa.jpg' },
+];
+
 export default function Home() {
   return (
     <main>
@@ -54,13 +62,14 @@ export default function Home() {
           <p className="speakers-preview__label">
             Speakers. <span style={{ fontSize: 13, opacity: 0.5, letterSpacing: '0.2em' }}>✦ · · · · ·</span>
           </p>
-          {/* <div className="speakers-preview__grid">
-            <img src="/pic1.png" alt="speaker 1" className="speaker-thumb" />
-            <img src="/pic2.png" alt="speaker 2" className="speaker-thumb" />
-            <img src="/pic3.png" alt="speaker 3" className="speaker-thumb" />
-            <img src="/pic2.png" alt="speaker 4" className="speaker-thumb" />
-            <img src="/pic3.png" alt="speaker 5" className="speaker-thumb" />
-          </div> */}
+          <div className="speakers-preview__list">
+            {speakerPreviewData.map((speaker) => (
+              <figure key={speaker.image} className="speaker-preview" tabIndex="0">
+                <img src={speaker.image} alt={speaker.name} className="speaker-thumb" />
+                <figcaption>{speaker.name}</figcaption>
+              </figure>
+            ))}
+          </div>
           <Link to="/speakers" className="learn-more" style={{ marginTop: 28 }}>→ Learn more</Link>
         </div>
       </section>

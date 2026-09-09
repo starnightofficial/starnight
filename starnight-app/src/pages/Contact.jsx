@@ -14,6 +14,9 @@ export default function Contact() {
 
       <div className="contact-body">
         <h2 className="contact-body__title">お問い合わせ</h2>
+        <p className="contact-body__intro">
+          スターナイト講義に関するお問い合わせは、以下の窓口までお寄せください。
+        </p>
         <div className="contact-links">
           <a href="mailto:tedxkyotouniversity.team@gmail.com" aria-label="Email" className="contact-link">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,6 +34,15 @@ export default function Contact() {
             </svg>
             <span>@tedxkyotouniversity</span>
           </a>
+        </div>
+        <div className="contact-credits">
+          <p className="contact-credits__label">スターナイト講義の主催</p>
+          <p className="contact-credits__text">
+            TEDxKyotoUniversity、スターナイト講義実行委員会
+          </p>
+          <p className="contact-credits__text">
+            共催：京都大学国際高等教育院
+          </p>
         </div>
       </div>
     </div>
