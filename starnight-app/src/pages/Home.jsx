@@ -11,7 +11,7 @@ const scheduleData = [
 ];
 
 const speakerPreviewData = [
-  { name: '宮野 公樹先生', image: '' },
+  { name: '宮野 公樹先生', image: 'speakers/miyano.png' },
   { name: '高橋 淳先生', image: 'speakers/takahashi.jpg' },
   { name: '野田 進先生', image: 'speakers/noda.jpg' },
   { name: '内田 由紀子先生', image: 'speakers/uchida.jpg' },
@@ -80,7 +80,7 @@ export default function Home() {
         <div className="schedule-preview__inner">
           <div className="section-header" style={{ textAlign: 'left' }}>
             <h2>Schedule.</h2>
-            <p>各日は16:45〜18:15に開催されます。</p>
+            <p>各日は16:45〜18:15に開催されます。また、各日登壇講師は当日に発表されます。</p>
           </div>
           <table className="schedule-table">
             <thead>
