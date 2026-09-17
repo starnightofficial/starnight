@@ -38,7 +38,7 @@ export default function Contact() {
         <div className="contact-credits">
           <p className="contact-credits__label">スターナイト講義の主催</p>
           <p className="contact-credits__text">
-            TEDxKyotoUniversity、スターナイト講義実行委員会
+            TEDxKyotoUniversity スターナイト講義実行委員会
           </p>
           <p className="contact-credits__text">
             共催：京都大学国際高等教育院

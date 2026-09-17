@@ -25,7 +25,7 @@ export default function Footer() {
       </div>
       <div className="footer__bottom">
         <span className="footer__copy">
-          2026 スターナイト講義実行委員会.
+          2026 スターナイト講義実行委員会
         </span>
         <span className="footer__find">Find: @starnight</span>
       </div>

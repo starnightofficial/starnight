@@ -41,7 +41,7 @@ export default function About() {
           <div className="about-block">
             <h2>主催</h2>
             <p>
-              主催: TEDxKyotoUniversity、スターナイト講義実行委員会
+              主催: TEDxKyotoUniversity スターナイト講義実行委員会
             </p>
             <p>
               共催：京都大学国際高等教育院

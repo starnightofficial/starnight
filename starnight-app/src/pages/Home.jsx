@@ -52,7 +52,7 @@ export default function Home() {
               双方向のコミュニケーションを通して、学びの意味をとらえなおす契機となることを目指しています。場を提供します。大学における学びが社会や未来へとつながるきっかけを生み出します。 */}
             </p>
             <Link to="/about" className="learn-more">→ Learn more</Link>
-            <p className="about-preview__sponsor">主催: TEDxKyotoUniversity、スターナイト講義実行委員会 | 共催：京都大学国際高等教育院</p>
+            <p className="about-preview__sponsor">主催: TEDxKyotoUniversity スターナイト講義実行委員会 | 共催：京都大学国際高等教育院</p>
           </div>
         </div>
       </section>
