@@ -11,12 +11,12 @@ import '../styles/Speakers.css';
 // ];
 
 const schedule = [
-  { no: 1, date: '2026年10月8日（木）', venue: '国際高等教育院棟3階大教室31・32', speaker: 'TBA', theme: '' },
-  { no: 2, date: '2026年10月16日（金）', venue: '国際高等教育院棟3階大教室31・32',speaker: 'TBA', theme: '' },
-  { no: 3, date: '2026年10月22日（木）', venue: '国際高等教育院棟3階大教室31・32',speaker: 'TBA', theme: '' },
-  { no: 4, date: '2026年10月29日（木）', venue: '国際高等教育院棟3階大教室31・32',speaker: 'TBA', theme: '' },
-  { no: 5, date: '2026年11月5日（木）', venue: '国際高等教育院棟3階大教室31・32',speaker: 'TBA', theme: '' },
-  { no: 6, date: '2026年11月10日（火）', venue: '吉田南4号館', speaker: 'TBA', theme: '' },
+  { no: 1, date: '2026年10月8日（木）', venue: '国際高等教育院棟3階大教室31・32', speaker: '宮野 公樹先生', theme: '「学びを学ぶ」' },
+  { no: 2, date: '2026年10月16日（金）', venue: '国際高等教育院棟3階大教室31・32',speaker: 'TBA', theme: '-' },
+  { no: 3, date: '2026年10月22日（木）', venue: '国際高等教育院棟3階大教室31・32',speaker: 'TBA', theme: '-' },
+  { no: 4, date: '2026年10月29日（木）', venue: '国際高等教育院棟3階大教室31・32',speaker: 'TBA', theme: '-' },
+  { no: 5, date: '2026年11月5日（木）', venue: '国際高等教育院棟3階大教室31・32',speaker: 'TBA', theme: '-' },
+  { no: 6, date: '2026年11月10日（火）', venue: '吉田南4号館講義室30', speaker: 'TBA', theme: '-' },
 ];
 
 export default function Schedule() {
@@ -42,7 +42,7 @@ export default function Schedule() {
               {/* <th>時間</th> */}
               {/* <th>会場</th> */}
               <th>講師</th>
-              <th>テーマ</th>
+              {/* <th>テーマ</th> */}
             </tr>
           </thead>
           <tbody>
@@ -53,7 +53,7 @@ export default function Schedule() {
                   {row.date}<br />16:45〜18:15<br />{row.venue}
                   </td>
                 <td>{row.speaker}</td>
-                <td>{row.theme}</td>
+                {/* <td>{row.theme}</td> */}
               </tr>
             ))}
           </tbody>

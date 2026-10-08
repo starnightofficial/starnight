@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import '../styles/Home.css';
 
 const scheduleData = [
-  { date: '2026年10月8日（木）', speaker: 'TBA', theme: '' },
+  { date: '2026年10月8日（木）', speaker: '宮野 公樹先生', theme: '' },
   { date: '2026年10月16日（金）', speaker: 'TBA', theme: '' },
   { date: '2026年10月22日（木）', speaker: 'TBA', theme: '' },
   { date: '2026年10月29日（木）', speaker: 'TBA', theme: '' },
@@ -11,12 +11,12 @@ const scheduleData = [
 ];
 
 const speakerPreviewData = [
+  { name: '北川 進先生', image: 'speakers/kitagawa.jpg' },  
+  { name: '森 重文先生', image: 'speakers/mori.jpg' },
+  { name: '野田 進先生', image: 'speakers/noda.jpg' },
   { name: '宮野 公樹先生', image: 'speakers/miyano.png' },
   { name: '高橋 淳先生', image: 'speakers/takahashi.jpg' },
-  { name: '野田 進先生', image: 'speakers/noda.jpg' },
   { name: '内田 由紀子先生', image: 'speakers/uchida.jpg' },
-  { name: '森 重文先生', image: 'speakers/mori.jpg' },
-  { name: '北川 進先生', image: 'speakers/kitagawa.jpg' },  
 ];
 
 export default function Home() {
@@ -87,26 +87,26 @@ export default function Home() {
               <tr>
                 <th>日程</th>
                 <th>講師</th>
-                <th>テーマ</th>
+                {/* <th>テーマ</th> */}
               </tr>
             </thead>
             <tbody>
               {scheduleData.map((row, i) => (
                 <tr key={i}>
                   <td className="schedule-date">{row.date}</td>
-                  {i === 0 ? (
+                  {i === 1 ? (
                     <>
-                      <td rowSpan={6} className="schedule-tba-cell">
+                      <td rowSpan={5} className="schedule-tba-cell">
                         TBA
                       </td>
-                      <td rowSpan={6} className="schedule-tba-cell">
-                        TBA
-                      </td>
+                      {/* <td rowSpan={6} className="schedule-tba-cell"> */}
+                        {/* TBA */}
+                      {/* </td> */}
                     </>
                   ) : i > 0 ? null : (
                     <>
                       <td>{row.speaker}</td>
-                      <td>{row.theme}</td>
+                      {/* <td>{row.theme}</td> */}
                     </>
                   )}
                 </tr>
