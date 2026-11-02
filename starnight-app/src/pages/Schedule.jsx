@@ -12,9 +12,9 @@ import '../styles/Speakers.css';
 
 const schedule = [
   { no: 1, date: '2026年10月8日（木）', venue: '国際高等教育院棟3階大教室31・32', speaker: '宮野 公樹先生', theme: '「学びを学ぶ」' },
-  { no: 2, date: '2026年10月16日（金）', venue: '国際高等教育院棟3階大教室31・32',speaker: 'TBA', theme: '-' },
-  { no: 3, date: '2026年10月22日（木）', venue: '国際高等教育院棟3階大教室31・32',speaker: 'TBA', theme: '-' },
-  { no: 4, date: '2026年10月29日（木）', venue: '国際高等教育院棟3階大教室31・32',speaker: 'TBA', theme: '-' },
+  { no: 2, date: '2026年10月16日（金）', venue: '国際高等教育院棟3階大教室31・32',speaker: '高橋 淳先生', theme: 'iPS細胞を用いた神経再生' },
+  { no: 3, date: '2026年10月22日（木）', venue: '国際高等教育院棟3階大教室31・32',speaker: '野田 進先生', theme: '21世紀は、まさに「光」の時代' },
+  { no: 4, date: '2026年10月29日（木）', venue: '国際高等教育院棟3階大教室31・32',speaker: '内田 由紀子先生', theme: '京大で出会った文化心理学' },
   { no: 5, date: '2026年11月5日（木）', venue: '国際高等教育院棟3階大教室31・32',speaker: 'TBA', theme: '-' },
   { no: 6, date: '2026年11月10日（火）', venue: '吉田南4号館講義室30', speaker: 'TBA', theme: '-' },
 ];

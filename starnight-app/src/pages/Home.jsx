@@ -3,9 +3,9 @@ import '../styles/Home.css';
 
 const scheduleData = [
   { date: '2026年10月8日（木）', speaker: '宮野 公樹先生', theme: '' },
-  { date: '2026年10月16日（金）', speaker: 'TBA', theme: '' },
-  { date: '2026年10月22日（木）', speaker: 'TBA', theme: '' },
-  { date: '2026年10月29日（木）', speaker: 'TBA', theme: '' },
+  { date: '2026年10月16日（金）', speaker: '高橋 淳先生', theme: '' },
+  { date: '2026年10月22日（木）', speaker: '野田 進先生', theme: '' },
+  { date: '2026年10月29日（木）', speaker: '内田 由紀子先生', theme: '' },
   { date: '2026年11月5日（木）', speaker: 'TBA', theme: '' },
   { date: '2026年11月10日（火）', speaker: 'TBA', theme: '' },
 ];
@@ -91,24 +91,12 @@ export default function Home() {
               </tr>
             </thead>
             <tbody>
-              {scheduleData.map((row, i) => (
-                <tr key={i}>
+              {scheduleData.map((row) => (
+                <tr key={row.date}>
                   <td className="schedule-date">{row.date}</td>
-                  {i === 1 ? (
-                    <>
-                      <td rowSpan={5} className="schedule-tba-cell">
-                        TBA
-                      </td>
-                      {/* <td rowSpan={6} className="schedule-tba-cell"> */}
-                        {/* TBA */}
-                      {/* </td> */}
-                    </>
-                  ) : i > 0 ? null : (
-                    <>
-                      <td>{row.speaker}</td>
-                      {/* <td>{row.theme}</td> */}
-                    </>
-                  )}
+                  <td className={row.speaker === 'TBA' ? 'schedule-tba-cell' : undefined}>
+                    {row.speaker}
+                  </td>
                 </tr>
               ))}
             </tbody>
